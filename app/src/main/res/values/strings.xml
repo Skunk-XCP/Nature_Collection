@@ -31,8 +31,8 @@
 
     <!-- Fenetre Popup de détails  -->
     <string name="popup_plant_name">Plant Name</string>
-    <string name="popup_plant_description_title">Desription</string>
-    <string name="popup_plant_description_subtitle">Petite Desription</string>
+    <string name="popup_plant_description_title">Description</string>
+    <string name="popup_plant_description_subtitle">Petite Description</string>
 
     <string name="popup_plant_grow_title">Croissance</string>
     <string name="popup_plant_grow_subtitle">Lente</string>

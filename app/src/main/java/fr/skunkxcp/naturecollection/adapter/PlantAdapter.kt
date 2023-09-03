@@ -11,11 +11,12 @@ import com.bumptech.glide.Glide
 import fr.skunkxcp.naturecollection.PlantModel
 import fr.skunkxcp.naturecollection.R
 import fr.skunkxcp.naturecollection.MainActivity
+import fr.skunkxcp.naturecollection.PlantPopup
 import fr.skunkxcp.naturecollection.PlantRepository
 
 
 class PlantAdapter(
-    private val context: MainActivity,
+    val context: MainActivity,
     private val plantList: List<PlantModel>,
     private val layoutId: Int) : RecyclerView.Adapter<PlantAdapter.ViewHolder>() {
 
@@ -68,7 +69,12 @@ class PlantAdapter(
 
             // mettre a jour l'objet plante
             repo.updatePlant(currentPlant)
+        }
 
+        // interaction lors du clic sur une plante
+        holder.itemView.setOnClickListener {
+            // afficher la popup
+            PlantPopup(this).show()
         }
     }
 
