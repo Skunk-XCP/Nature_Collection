@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "397528877206",
+    "project_id": "nature-collection-bee8b",
+    "storage_bucket": "nature-collection-bee8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397528877206:android:dba05b0cec53bf63b7dab7",
+        "android_client_info": {
+          "package_name": "fr.skunkxcp.naturecollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397528877206-kh0i2pn0v7nhbuamd19lp3q13vjrthop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6jB5psGjOTzrg7CpQRd_KSiXMutOpzgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397528877206-kh0i2pn0v7nhbuamd19lp3q13vjrthop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
