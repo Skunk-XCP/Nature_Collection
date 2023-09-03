@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 import fr.skunkxcp.naturecollection.PlantModel
 import fr.skunkxcp.naturecollection.R
 import fr.skunkxcp.naturecollection.MainActivity
+import fr.skunkxcp.naturecollection.PlantRepository
 
 
 class PlantAdapter(
@@ -40,6 +41,9 @@ class PlantAdapter(
         // Recuperer les informations de la plante
         val currentPlant = plantList[position]
 
+        // recuperer le repository
+        val repo = PlantRepository()
+
         // Utiliser glide pour recuperer l'image a partir de son lien -> composant
         Glide.with(context).load(Uri.parse(currentPlant.imageUrl)).into(holder.planteImage)
 
@@ -55,6 +59,16 @@ class PlantAdapter(
         }
         else {
             holder.starIcon.setImageResource(R.drawable.ic_unstar)
+        }
+
+        // ajouter une interaction sur l'etoile
+        holder.starIcon.setOnClickListener {
+            // inverser le bouton s'il est liked ou non
+            currentPlant.liked = !currentPlant.liked
+
+            // mettre a jour l'objet plante
+            repo.updatePlant(currentPlant)
+
         }
     }
 
